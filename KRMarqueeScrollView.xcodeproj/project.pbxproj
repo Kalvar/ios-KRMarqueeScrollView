@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E2325D5177A03210037E2B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2325D4177A03210037E2B1 /* UIKit.framework */; };
+		8E2325D7177A03210037E2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2325D6177A03210037E2B1 /* Foundation.framework */; };
+		8E2325D9177A03210037E2B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2325D8177A03210037E2B1 /* CoreGraphics.framework */; };
+		8E2325DF177A03210037E2B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E2325DD177A03210037E2B1 /* InfoPlist.strings */; };
+		8E2325E1177A03210037E2B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2325E0177A03210037E2B1 /* main.m */; };
+		8E2325E5177A03210037E2B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2325E4177A03210037E2B1 /* AppDelegate.m */; };
+		8E2325E7177A03210037E2B1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2325E6177A03210037E2B1 /* Default.png */; };
+		8E2325E9177A03210037E2B1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2325E8177A03210037E2B1 /* Default@2x.png */; };
+		8E2325EB177A03210037E2B1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2325EA177A03210037E2B1 /* Default-568h@2x.png */; };
+		8E2325EE177A03210037E2B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2325ED177A03210037E2B1 /* ViewController.m */; };
+		8E2325F1177A03210037E2B1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2325EF177A03210037E2B1 /* ViewController.xib */; };
+		8E2325FB177A03420037E2B1 /* KRMarqueeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2325FA177A03420037E2B1 /* KRMarqueeScrollView.m */; };
+		8E232601177A04D40037E2B1 /* sample1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2325FD177A04D40037E2B1 /* sample1.png */; };
+		8E232602177A04D40037E2B1 /* sample1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2325FE177A04D40037E2B1 /* sample1@2x.png */; };
+		8E232603177A04D40037E2B1 /* sample2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E2325FF177A04D40037E2B1 /* sample2.png */; };
+		8E232604177A04D40037E2B1 /* sample2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E232600177A04D40037E2B1 /* sample2@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E2325D1177A03210037E2B1 /* KRMarqueeScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRMarqueeScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2325D4177A03210037E2B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E2325D6177A03210037E2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E2325D8177A03210037E2B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E2325DC177A03210037E2B1 /* KRMarqueeScrollView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KRMarqueeScrollView-Info.plist"; sourceTree = "<group>"; };
+		8E2325DE177A03210037E2B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E2325E0177A03210037E2B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E2325E2177A03210037E2B1 /* KRMarqueeScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRMarqueeScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		8E2325E3177A03210037E2B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E2325E4177A03210037E2B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E2325E6177A03210037E2B1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8E2325E8177A03210037E2B1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8E2325EA177A03210037E2B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8E2325EC177A03210037E2B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8E2325ED177A03210037E2B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E2325F0177A03210037E2B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		8E2325F9177A03420037E2B1 /* KRMarqueeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRMarqueeScrollView.h; sourceTree = "<group>"; };
+		8E2325FA177A03420037E2B1 /* KRMarqueeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRMarqueeScrollView.m; sourceTree = "<group>"; };
+		8E2325FD177A04D40037E2B1 /* sample1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample1.png; sourceTree = "<group>"; };
+		8E2325FE177A04D40037E2B1 /* sample1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample1@2x.png"; sourceTree = "<group>"; };
+		8E2325FF177A04D40037E2B1 /* sample2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample2.png; sourceTree = "<group>"; };
+		8E232600177A04D40037E2B1 /* sample2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample2@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E2325CE177A03210037E2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2325D5177A03210037E2B1 /* UIKit.framework in Frameworks */,
+				8E2325D7177A03210037E2B1 /* Foundation.framework in Frameworks */,
+				8E2325D9177A03210037E2B1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E2325C8177A03210037E2B1 = {
+			isa = PBXGroup;
+			children = (
+				8E2325FC177A04D40037E2B1 /* Images */,
+				8E2325F7177A03420037E2B1 /* Classes */,
+				8E2325DA177A03210037E2B1 /* KRMarqueeScrollView */,
+				8E2325DB177A03210037E2B1 /* Supporting Files */,
+				8E2325D3177A03210037E2B1 /* Frameworks */,
+				8E2325D2177A03210037E2B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E2325D2177A03210037E2B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E2325D1177A03210037E2B1 /* KRMarqueeScrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E2325D3177A03210037E2B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E2325D4177A03210037E2B1 /* UIKit.framework */,
+				8E2325D6177A03210037E2B1 /* Foundation.framework */,
+				8E2325D8177A03210037E2B1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E2325DA177A03210037E2B1 /* KRMarqueeScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				8E2325E3177A03210037E2B1 /* AppDelegate.h */,
+				8E2325E4177A03210037E2B1 /* AppDelegate.m */,
+				8E2325EC177A03210037E2B1 /* ViewController.h */,
+				8E2325ED177A03210037E2B1 /* ViewController.m */,
+				8E2325EF177A03210037E2B1 /* ViewController.xib */,
+			);
+			path = KRMarqueeScrollView;
+			sourceTree = "<group>";
+		};
+		8E2325DB177A03210037E2B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E2325DC177A03210037E2B1 /* KRMarqueeScrollView-Info.plist */,
+				8E2325DD177A03210037E2B1 /* InfoPlist.strings */,
+				8E2325E0177A03210037E2B1 /* main.m */,
+				8E2325E2177A03210037E2B1 /* KRMarqueeScrollView-Prefix.pch */,
+				8E2325E6177A03210037E2B1 /* Default.png */,
+				8E2325E8177A03210037E2B1 /* Default@2x.png */,
+				8E2325EA177A03210037E2B1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			path = KRMarqueeScrollView;
+			sourceTree = "<group>";
+		};
+		8E2325F7177A03420037E2B1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8E2325F8177A03420037E2B1 /* KRMarqueeScrollView */,
+			);
+			name = Classes;
+			path = KRMarqueeScrollView/Classes;
+			sourceTree = "<group>";
+		};
+		8E2325F8177A03420037E2B1 /* KRMarqueeScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				8E2325F9177A03420037E2B1 /* KRMarqueeScrollView.h */,
+				8E2325FA177A03420037E2B1 /* KRMarqueeScrollView.m */,
+			);
+			path = KRMarqueeScrollView;
+			sourceTree = "<group>";
+		};
+		8E2325FC177A04D40037E2B1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8E2325FD177A04D40037E2B1 /* sample1.png */,
+				8E2325FE177A04D40037E2B1 /* sample1@2x.png */,
+				8E2325FF177A04D40037E2B1 /* sample2.png */,
+				8E232600177A04D40037E2B1 /* sample2@2x.png */,
+			);
+			name = Images;
+			path = KRMarqueeScrollView/Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E2325D0177A03210037E2B1 /* KRMarqueeScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2325F4177A03210037E2B1 /* Build configuration list for PBXNativeTarget "KRMarqueeScrollView" */;
+			buildPhases = (
+				8E2325CD177A03210037E2B1 /* Sources */,
+				8E2325CE177A03210037E2B1 /* Frameworks */,
+				8E2325CF177A03210037E2B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRMarqueeScrollView;
+			productName = KRMarqueeScrollView;
+			productReference = 8E2325D1177A03210037E2B1 /* KRMarqueeScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E2325C9177A03210037E2B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Kuo-Ming Lin";
+			};
+			buildConfigurationList = 8E2325CC177A03210037E2B1 /* Build configuration list for PBXProject "KRMarqueeScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E2325C8177A03210037E2B1;
+			productRefGroup = 8E2325D2177A03210037E2B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E2325D0177A03210037E2B1 /* KRMarqueeScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E2325CF177A03210037E2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2325DF177A03210037E2B1 /* InfoPlist.strings in Resources */,
+				8E2325E7177A03210037E2B1 /* Default.png in Resources */,
+				8E2325E9177A03210037E2B1 /* Default@2x.png in Resources */,
+				8E2325EB177A03210037E2B1 /* Default-568h@2x.png in Resources */,
+				8E2325F1177A03210037E2B1 /* ViewController.xib in Resources */,
+				8E232601177A04D40037E2B1 /* sample1.png in Resources */,
+				8E232602177A04D40037E2B1 /* sample1@2x.png in Resources */,
+				8E232603177A04D40037E2B1 /* sample2.png in Resources */,
+				8E232604177A04D40037E2B1 /* sample2@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E2325CD177A03210037E2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2325E1177A03210037E2B1 /* main.m in Sources */,
+				8E2325E5177A03210037E2B1 /* AppDelegate.m in Sources */,
+				8E2325EE177A03210037E2B1 /* ViewController.m in Sources */,
+				8E2325FB177A03420037E2B1 /* KRMarqueeScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E2325DD177A03210037E2B1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E2325DE177A03210037E2B1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8E2325EF177A03210037E2B1 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E2325F0177A03210037E2B1 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E2325F2177A03210037E2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E2325F3177A03210037E2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E2325F5177A03210037E2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRMarqueeScrollView/KRMarqueeScrollView-Prefix.pch";
+				INFOPLIST_FILE = "KRMarqueeScrollView/KRMarqueeScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E2325F6177A03210037E2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KRMarqueeScrollView/KRMarqueeScrollView-Prefix.pch";
+				INFOPLIST_FILE = "KRMarqueeScrollView/KRMarqueeScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E2325CC177A03210037E2B1 /* Build configuration list for PBXProject "KRMarqueeScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2325F2177A03210037E2B1 /* Debug */,
+				8E2325F3177A03210037E2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2325F4177A03210037E2B1 /* Build configuration list for PBXNativeTarget "KRMarqueeScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2325F5177A03210037E2B1 /* Debug */,
+				8E2325F6177A03210037E2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E2325C9177A03210037E2B1 /* Project object */;
+}

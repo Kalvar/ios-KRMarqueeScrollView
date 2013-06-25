@@ -1,22 +1,27 @@
-## Screen Shot
+//
+//  ViewController.m
+//  KRMarqueeScrollView
+//
+//  Created by Kalvar on 13/6/26.
+//  Copyright (c) 2013年 Kuo-Ming Lin. All rights reserved.
+//
 
-<img src="https://dl.dropbox.com/u/83663874/GitHubs/KRMarqueeScrollView-1.png" alt="KRMarqueeScrollView" title="KRMarqueeScrollView" style="margin: 20px;" class="center" /> &nbsp;
-<img src="https://dl.dropbox.com/u/83663874/GitHubs/KRMarqueeScrollView-2.png" alt="KRMarqueeScrollView" title="KRMarqueeScrollView" style="margin: 20px;" class="center" /> &nbsp;
-="center" />
-<img src="https://dl.dropbox.com/u/83663874/GitHubs/KRMarqueeScrollView-3.png" alt="KRMarqueeScrollView" title="KRMarqueeScrollView" style="margin: 20px;" class="center" /> &nbsp;
+#import "ViewController.h"
+#import "KRMarqueeScrollView.h"
 
-## Supports
+@interface ViewController ()
 
-To implement marquee effect with images. 
+@end
 
-## How To Get Started
+@implementation ViewController
 
-``` objective-c
+@synthesize krMarqueeScrollView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.krMarqueeScrollView initialize];
-    self.krMarqueeScrollView.images = [NSArray arrayWithObjects:
+	[self.krMarqueeScrollView initialize];
+	self.krMarqueeScrollView.images = [NSArray arrayWithObjects:
                                        [UIImage imageNamed:@"sample1.png"],
                                        [UIImage imageNamed:@"sample2.png"],
                                        [UIImage imageNamed:@"sample1.png"],
@@ -35,12 +40,10 @@ To implement marquee effect with images.
     [self.krMarqueeScrollView displayImages];
     [self.krMarqueeScrollView start];
 }
-```
 
-## Version
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
 
-V0.2 Beta.
-
-## License
-
-KRMarqueeScrollView is available under the MIT license ( or Whatever you wanna do ). See the LICENSE file for more info.
+@end
