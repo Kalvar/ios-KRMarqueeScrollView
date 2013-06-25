@@ -2,7 +2,6 @@
 
 <img src="https://dl.dropbox.com/u/83663874/GitHubs/KRMarqueeScrollView-1.png" alt="KRMarqueeScrollView" title="KRMarqueeScrollView" style="margin: 20px;" class="center" /> &nbsp;
 <img src="https://dl.dropbox.com/u/83663874/GitHubs/KRMarqueeScrollView-2.png" alt="KRMarqueeScrollView" title="KRMarqueeScrollView" style="margin: 20px;" class="center" /> &nbsp;
-="center" />
 <img src="https://dl.dropbox.com/u/83663874/GitHubs/KRMarqueeScrollView-3.png" alt="KRMarqueeScrollView" title="KRMarqueeScrollView" style="margin: 20px;" class="center" /> &nbsp;
 
 ## Supports
