@@ -15,7 +15,7 @@
     CGFloat imageHeight;
     CGFloat offsetX;
     CGFloat eachImageInterval;
-    
+    CGFloat timerInterval;
 }
 
 @property (nonatomic, strong) NSArray *images;
@@ -23,6 +23,7 @@
 @property (nonatomic, assign) CGFloat imageHeight;
 @property (nonatomic, assign) CGFloat offsetX;
 @property (nonatomic, assign) CGFloat eachImageInterval;
+@property (nonatomic, assign) CGFloat timerInterval;
 
 -(void)initialize;
 -(void)displayImages;

@@ -14,8 +14,8 @@ To implement marquee effect with images.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.krMarqueeScrollView initialize];
-    self.krMarqueeScrollView.images = [NSArray arrayWithObjects:
+  [self.krMarqueeScrollView initialize];
+  self.krMarqueeScrollView.images = [NSArray arrayWithObjects:
                                        [UIImage imageNamed:@"sample1.png"],
                                        [UIImage imageNamed:@"sample2.png"],
                                        [UIImage imageNamed:@"sample1.png"],
@@ -30,8 +30,24 @@ To implement marquee effect with images.
                                        [UIImage imageNamed:@"sample2.png"],
                                        nil];
     self.krMarqueeScrollView.offsetX           = 10.0f;
-    self.krMarqueeScrollView.eachImageInterval = 0.5f;
     [self.krMarqueeScrollView displayImages];
+    [self decideCycleIntervalByYourself];
+    //[self decideCycleIntervalBySystemAutomatic];
+}
+
+#pragma --mark Methods
+-(void)decideCycleIntervalByYourself
+{
+    //If you wanna set the recycle interval by yourself, just don't be zero second that will be fired.
+    self.krMarqueeScrollView.timerInterval     = 2.0f;
+    [self.krMarqueeScrollView start];
+}
+
+-(void)decideCycleIntervalBySystemAutomatic
+{
+    //To set the zero second to fire 
+    self.krMarqueeScrollView.timerInterval     = 0.0f;
+    self.krMarqueeScrollView.eachImageInterval = 0.5f;
     [self.krMarqueeScrollView start];
 }
 ```

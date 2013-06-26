@@ -11,7 +11,6 @@
 @interface KRMarqueeScrollView ()
 
 @property (nonatomic, strong) NSTimer *_timer;
-@property (nonatomic, assign) CGFloat _timerInterval;
 
 @end
 
@@ -35,8 +34,8 @@
     self.imageHeight       = 0.0f;
     self.offsetX           = 0.0f;
     self.eachImageInterval = 1.5f;
+    self.timerInterval     = 0.0f;
     self._timer            = nil;
-    self._timerInterval    = 10.0f;
 }
 
 -(void)_removeAllSubviews
@@ -53,13 +52,16 @@
 
 -(void)_calculateTimerInterval
 {
-    if ( [self.images count] > 0 )
+    if( self.timerInterval <= 0.0f )
     {
-        self._timerInterval = [self.images count] * self.eachImageInterval;
-    }
-    else
-    {
-        self._timerInterval = 0.0f;
+        if ( [self.images count] > 0 )
+        {
+            self.timerInterval = [self.images count] * self.eachImageInterval;
+        }
+        else
+        {
+            self.timerInterval = 10.0f;
+        }
     }
 }
 
@@ -72,7 +74,7 @@
 {
     if( !self._timer )
     {
-        self._timer = [NSTimer scheduledTimerWithTimeInterval:self._timerInterval + 0.1f
+        self._timer = [NSTimer scheduledTimerWithTimeInterval:self.timerInterval + 0.1f
                                                        target:self
                                                      selector:@selector(_startScrolling)
                                                      userInfo:nil
@@ -83,7 +85,7 @@
     {
         _scrollingWidth = self.frame.size.width;
     }
-    [UIView animateWithDuration:self._timerInterval animations:^{
+    [UIView animateWithDuration:self.timerInterval animations:^{
         [self setContentOffset:CGPointMake(_scrollingWidth, 0.0f)];
     } completion:^(BOOL finished) {
         if( finished )
@@ -102,9 +104,10 @@
 @synthesize imageHeight;
 @synthesize offsetX;
 @synthesize eachImageInterval;
+@synthesize timerInterval;
 //
 @synthesize _timer;
-@synthesize _timerInterval;
+
 
 -(id)init
 {
@@ -135,7 +138,6 @@
 -(void)displayImages
 {
     [self _removeAllSubviews];
-    [self _calculateTimerInterval];
     NSInteger _currentCount = [self.images count];
     if( self.imageHeight <= 0.0f )
     {
@@ -174,6 +176,7 @@
 -(void)start
 {
     [self stop];
+    [self _calculateTimerInterval];
     /*
      * @ 先執行一次動畫以校準初始顯示的基準 X 軸
      */
