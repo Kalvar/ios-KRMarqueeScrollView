@@ -54,7 +54,7 @@ To implement marquee effect with images.
 
 ## Version
 
-V0.2 Beta.
+V0.3 Beta.
 
 ## License
 

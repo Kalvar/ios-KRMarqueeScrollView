@@ -1,6 +1,6 @@
 //
 //  KRMarqueeScrollView.h
-//  V0.2 Beta
+//  V0.3 Beta
 //
 //  Created by Kuo-Ming Lin ( ilovekalvar@gmail.com ) on 13/6/25.
 //  Copyright (c) 2013年 Kuo-Ming Lin. All rights reserved.
