@@ -6,7 +6,7 @@
 
 ## Supports
 
-To implement marquee effect with images. 
+To implement marquee effect with images, views, and you can use it to show marquee or page by page mode.
 
 ## How To Get Started
 
@@ -29,8 +29,9 @@ To implement marquee effect with images.
                                        [UIImage imageNamed:@"sample1.png"],
                                        [UIImage imageNamed:@"sample2.png"],
                                        nil];
-    self.krMarqueeScrollView.offsetX           = 10.0f;
+    self.krMarqueeScrollView.offsetX = 10.0f;
     [self.krMarqueeScrollView displayImages];
+    //[self.krMarqueeScrollView displayViews];
     [self decideCycleIntervalByYourself];
     //[self decideCycleIntervalBySystemAutomatic];
 }
@@ -39,22 +40,24 @@ To implement marquee effect with images.
 -(void)decideCycleIntervalByYourself
 {
     //If you wanna set the recycle interval by yourself, just don't be zero second that will be fired.
-    self.krMarqueeScrollView.timerInterval     = 2.0f;
-    [self.krMarqueeScrollView start];
+    self.krMarqueeScrollView.timerInterval = 2.0f;
+    [self.krMarqueeScrollView startScrollMarquee];
+    //[self.krMarqueeScrollView startScrollPageByPage];
 }
 
 -(void)decideCycleIntervalBySystemAutomatic
 {
-    //To set the zero second to fire 
-    self.krMarqueeScrollView.timerInterval     = 0.0f;
-    self.krMarqueeScrollView.eachImageInterval = 0.5f;
-    [self.krMarqueeScrollView start];
+    //To set the zero second to fire.
+    self.krMarqueeScrollView.timerInterval = 0.0f;
+    //Each imageView shows 0.5 second. If you have 10 images to show that it will be duration at 10 * 0.5 = 5 seconds.
+    self.krMarqueeScrollView.eachInterval  = 0.5f;
+    [self.krMarqueeScrollView startScrollMarquee];
 }
 ```
 
 ## Version
 
-V0.3 Beta.
+V0.4 Beta.
 
 ## License
 
