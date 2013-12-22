@@ -1,6 +1,6 @@
 //
 //  KRMarqueeScrollView.h
-//  V0.4 Beta
+//  V0.5 Beta
 //
 //  Created by Kuo-Ming Lin ( ilovekalvar@gmail.com ) on 13/6/25.
 //  Copyright (c) 2013年 Kuo-Ming Lin. All rights reserved.
@@ -30,6 +30,7 @@ typedef enum
     KRMarqueeScrollViewDisplayModes displayMode;
     NSInteger currentPage;
     NSInteger totalPage;
+    BOOL isPause;
 }
 
 @property (nonatomic, strong) NSArray *images;
@@ -43,13 +44,17 @@ typedef enum
 @property (nonatomic, assign) KRMarqueeScrollViewDisplayModes displayMode;
 @property (nonatomic, assign) NSInteger currentPage;
 @property (nonatomic, assign) NSInteger totalPage;
+@property (nonatomic, assign) BOOL isPause;
 
 -(void)initialize;
 -(void)displayImages;
 -(void)displayViews;
 -(void)startScrollMarquee;
+-(void)restartScrollMarquee;
 -(void)startScrollPageByPage;
+-(void)restartScrollPageByPage;
 -(void)stop;
+-(void)pause;
 -(void)clear;
 
 @end

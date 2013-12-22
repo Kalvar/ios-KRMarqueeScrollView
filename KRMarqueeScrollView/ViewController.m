@@ -65,4 +65,17 @@
     [self.krMarqueeScrollView startScrollMarquee];
 }
 
+-(void)pauseAndRestart
+{
+    if( self.krMarqueeScrollView.isPause )
+    {
+        [self.krMarqueeScrollView restartScrollMarquee];
+        //[self.krMarqueeScrollView restartScrollPageByPage];
+    }
+    else
+    {
+        [self.krMarqueeScrollView pause];
+    }
+}
+
 @end

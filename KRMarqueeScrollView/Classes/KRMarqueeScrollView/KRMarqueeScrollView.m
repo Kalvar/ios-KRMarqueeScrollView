@@ -1,6 +1,6 @@
 //
 //  KRMarqueeScrollView.m
-//  V0.3 Beta
+//  V0.5 Beta
 //
 //  Created by Kuo-Ming Lin ( ilovekalvar@gmail.com ) on 13/6/25.
 //  Copyright (c) 2013年 Kuo-Ming Lin. All rights reserved.
@@ -44,6 +44,7 @@
     self.isImageViewMode   = YES;
     self.currentPage       = 0;
     self.totalPage         = 0;
+    self.isPause           = NO;
     self._timer            = nil;
     [self setBackgroundColor:[UIColor clearColor]];
     self.scrollEnabled                  = NO;
@@ -197,6 +198,7 @@
 @synthesize displayMode;
 @synthesize currentPage;
 @synthesize totalPage;
+@synthesize isPause;
 //
 @synthesize _timer;
 
@@ -319,6 +321,11 @@
     }];
 }
 
+-(void)restartScrollMarquee
+{
+    [self startScrollMarquee];
+}
+
 /*
  * @ If you wanna use this method that you need to setup timerInterval param.
  */
@@ -331,12 +338,26 @@
     [self _startPageByPageScrolling];
 }
 
+-(void)restartScrollPageByPage
+{
+    //[self._timer invalidate] 之後，必須重新再啟動一次 NSTimer scheduledTimer 的方法，才能真正的重啟 Timer
+    [self startScrollPageByPage];
+}
+
 -(void)stop
 {
     if( self._timer )
     {
         [self._timer invalidate];
         self._timer = nil;
+    }
+}
+
+-(void)pause
+{
+    if( self._timer )
+    {
+        [self._timer invalidate];
     }
 }
 
@@ -347,5 +368,10 @@
     [self _removeAllSubviews];
 }
 
+#pragma --mark Getters
+-(BOOL)isPause
+{
+    return ( self._timer && ![self._timer isValid] );
+}
 
 @end
