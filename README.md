@@ -6,7 +6,8 @@
 
 ## Supports
 
-To implement marquee effect with images, views, and you can use it to show marquee or page by page mode.
+To implement marquee effect or carousel with images, views, and you can use it to show marquee or page by page mode.
+
 
 ## How To Get Started
 
@@ -53,11 +54,24 @@ To implement marquee effect with images, views, and you can use it to show marqu
     self.krMarqueeScrollView.eachInterval  = 0.5f;
     [self.krMarqueeScrollView startScrollMarquee];
 }
+
+-(void)pauseAndRestart
+{
+    if( self.krMarqueeScrollView.isPause )
+    {
+        [self.krMarqueeScrollView restartScrollMarquee];
+        //[self.krMarqueeScrollView restartScrollPageByPage];
+    }
+    else
+    {
+        [self.krMarqueeScrollView pause];
+    }
+}
 ```
 
 ## Version
 
-V0.4 Beta.
+V0.5 Beta.
 
 ## License
 
